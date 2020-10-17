@@ -5,11 +5,11 @@ import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-train',
-  templateUrl: './train.component.html',
-  styleUrls: ['./train.component.css']
+  templateUrl: 'train.component.html',
+  styleUrls: ['train.component.css']
 })
 export class TrainComponent implements OnInit {
-  private trainData;
+  trainData;
 
   constructor(private http: HttpClient) { }
 
