@@ -1,0 +1,10 @@
+
+<div>{{ date | date:"short"}}</div>
+<p> hello {{ user }}</p>
+<div>
+  <img src="../../assets/test1.jpg" height="194" width="260"/></div>
+<div>
+  <button (click)="userClic()">clic</button>
+</div>
+<div *ngFor="let element of elements; let i" [ngClass]="{'highlighted': i % 2 === 0}">Hello {{ i }}</div>
+<div [ngClass]="{'highlighted': color}">Directive</div>
